@@ -1,0 +1,59 @@
+/* --- MAKHAN RESTAURANT CUSTOM STYLES --- */
+
+body {
+font-family: 'Plus Jakarta Sans', sans-serif;
+background-color: #121212;
+color: #f3f4f6;
+}
+
+/* Custom Gold Scrollbar */
+::-webkit-scrollbar {
+width: 8px;
+}
+::-webkit-scrollbar-track {
+background: #1a1a1a;
+}
+::-webkit-scrollbar-thumb {
+background: #d4af37;
+border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+background: #f3e5ab;
+}
+
+/* Gold Gradients */
+.gold-gradient {
+background: linear-gradient(135deg, #d4af37 0%, #aa8c2c 100%);
+}
+
+.gold-text-gradient {
+background: linear-gradient(135deg, #f3e5ab 0%, #d4af37 50%, #aa8c2c 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+/* Glassmorphism Card Effect */
+.glass-card {
+background: rgba(26, 26, 26, 0.85);
+backdrop-filter: blur(12px);
+border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.glass-card:hover {
+border-color: rgba(212, 175, 55, 0.6);
+box-shadow: 0 10px 30px -10px rgba(212, 175, 55, 0.2);
+}
+
+/* Hide scrollbar for category selector */
+.no-scrollbar::-webkit-scrollbar {
+display: none;
+}
+.no-scrollbar {
+-ms-overflow-style: none;
+scrollbar-width: none;
+}
+
+/* Smooth transitions */
+button, a, input, select {
+transition: all 0.2s ease-in-out;
+}
